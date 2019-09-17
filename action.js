@@ -26,11 +26,10 @@ $(".riga").click(function (){
           var myNum = data.response;
           if (myNum <= 5) {
             questo.addClass("yellow");
-            questo.html(myNum);
           }  if (myNum > 5) {
             questo.addClass("green");
-            questo.html(myNum);
           }
+          questo.html(myNum);
         },
         error : function(){
           console.log("C'è stato un errore");
