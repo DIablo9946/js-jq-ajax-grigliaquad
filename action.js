@@ -11,10 +11,13 @@
 
 $(document).ready(function() {
 
+for (i=0; i < 36; i++) {
+  var clonaRiga = $("#template .riga").clone();
+  $(".vuoto").append(clonaRiga);
+}
 
 
-
-$(".riga").click(function (){
+$(".riga").on("click" , function (){
 
         var questo = $(this);
 
