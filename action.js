@@ -15,14 +15,21 @@ $(document).ready(function() {
 
 
 $(".riga").click(function (){
+
+        var questo = $(this);
+
         var randnum = $.ajax ({
         url : "https://flynn.boolean.careers/exercises/api/random/int",
         method : "GET",
-        success : function(data){
-          if (randnum.response <= 5) {
-            $(this).addClass("yellow");
-          }  if (randnum.response > 5) {
-            $(this).addClass("green");
+        success : function (data,stato){
+          console.log(data);
+          var myNum = data.response;
+          if (myNum <= 5) {
+            questo.addClass("yellow");
+            questo.html(myNum);
+          }  if (myNum > 5) {
+            questo.addClass("green");
+            questo.html(myNum);
           }
         },
         error : function(){
@@ -30,7 +37,6 @@ $(".riga").click(function (){
         }
     });
     console.log(randnum);
-
 });
 
 

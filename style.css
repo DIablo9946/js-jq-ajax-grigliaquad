@@ -19,6 +19,9 @@
   border: black 1px solid;
   height: 100px;
   float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .space {
