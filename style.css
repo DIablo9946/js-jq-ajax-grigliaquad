@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.vuoto:first-child {
+  margin-top: 200px;
+}
+
+.riga:first-child {
+  margin-left: 20%;
+}
+
+
+.riga {
+  width: calc(100% / 12);
+  /* background-color: yellow; */
+  border: black 1px solid;
+  height: 100px;
+  float: left;
+}
+
+.space {
+  width: 200px;
+  height: 100px;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
